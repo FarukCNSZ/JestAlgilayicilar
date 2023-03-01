@@ -20,14 +20,14 @@ class ViewController: UIViewController {
         
         imageView.isUserInteractionEnabled = true
         
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(gorselDegistir))
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeImage))
         
         imageView.addGestureRecognizer(gestureRecognizer)
         
         
     }
     
-    @objc func gorselDegistir() {
+    @objc func changeImage() {
         
         if ankara == false {
             imageView.image = UIImage(named: "ankara")
